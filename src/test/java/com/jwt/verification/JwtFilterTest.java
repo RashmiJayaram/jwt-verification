@@ -62,7 +62,7 @@ public class JwtFilterTest {
     }
 
     @Test
-    public void doFilterOnce() throws ServletException, IOException {
+    public void filterTest() throws ServletException, IOException {
 
         JwtFilter jwtFilter=new JwtFilter();
         jwtFilter.doFilterInternal(this.request, this.response, this.chain);
