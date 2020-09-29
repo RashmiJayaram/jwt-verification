@@ -55,6 +55,8 @@ public class JwtFilterTest {
         //The following is an expired token. It can be used to test the unauthorised scenario
         //eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJyMGowMGNwIiwiZXhwIjoxNjAxMzgzNjE5fQ.QrfZVnGa3KOHDyrOZ3spZtd0Z8kbx4eltgwST9Tg3xg
 
+        //insted of "abcd", a different secret can be passed here to test the wrong secret scenario
+
         this.response = new MockHttpServletResponse();
         this.chain = new MockFilterChain();
         this.filter = new JwtFilter();
